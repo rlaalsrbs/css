@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='utf-8'>
+	  <title>가상클래스 선택자</title>
+	  <style>
+	      .checkbox:checked{
+		       display: none;
+		  }
+		  .span:hover {
+		        border: 1px solid red;
+		  }
+		  .text:read-only{
+		      background-color:gray;
+		  }
+		  
+		  ul li:first-child{
+		     border: 1px solid red;
+		  }
+		  
+		  ul li:last-child{
+		      border: 1px solid blue;
+		  }
+		  
+		  ul li:nth-child(2), ul li:nth-child(3), ul li:nth-child(4) {
+		       border: 1px solid orange;
+		  }
+		  */
+		  ul li:nth-child(2n) {
+		      border: 1px solid orange;
+		  }
+		  
+		   ul li:nth-child(2n+1) {
+		      border: 1px solid blue;
+		  }
+		  */
+		   ul li:nth-child(3n) {
+		      border: 1px solid blue;
+		  }
+		    */
+	  
+	       ul li:not(.menu5) {
+	              border: 1px solid red;
+	      }
+		   */
+		   ul li:before{
+		       content: 'Before';
+			   background-color:gray;
+		   }
+		   
+		   ul li:after {
+		        content: 'After';
+				background-color: blue;
+		   }
+	  </style>
+   </head>
+   <body>
+        <input type='checkbox' class='checkbox'>체크 하세요.
+		<span class='span'>마우스를 올려 보세요</span>
+		<input type='text' class='text' readonly>
+		
+		<ul>
+		       <li>메뉴1</li>
+			   <li>메뉴2</li>
+			   <li>메뉴3</li>
+			   <li>메뉴4</li>
+			   <li>메뉴5</li>
+		</ul>
+		
+   </body>
+</html>   
