@@ -41,9 +41,28 @@ ul {
 	font-size: 12px;
 	letter-spacing: -0.24px;
 	color: #333333;
-	padding: 0 10px;
+	padding: 0 10px 0 11px;
 	line-height: 30px;
+	position:relative;
+	display: inline-block;
 }
+
+.site_top a:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 9px;
+	background-color: #333333;
+	position: absolute;
+	top: 11px;
+	left: 0;
+}
+
+.site_top .first:before {
+	display: none;
+}
+
+
 
 /** 사이트 로고, 검색, 아이콘 메뉴*/
 .logo_search .box {
@@ -98,14 +117,14 @@ ul {
 	vertical-align: top;
 }
 
-.logo_search .icon_menu a:nth-child(1)img{
+.logo_search .icon_menu a:nth-child(1) img{
 	height: 62px;
 	position: relative;
 	top: 3px;
 }
 
-.logo_search .icon_menu a:nth-child(2)img,
-.logo_search .icon_menu a:nth-child(3)img{
+.logo_search .icon_menu a:nth-child(2) img,
+.logo_search .icon_menu a:nth-child(3) img{
 	height: 68px;
 }
 
@@ -158,18 +177,374 @@ nav li.more_menu {
 	text-align: center;	
 }
 
+/** 메인 영역 */
+main {
+	min-height: 2000px;
+}
+
+main .mtit {
+	color: #222222;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	font-size: 25px;
+}
+
+main .mtit > span {
+	font-weight: 700;
+}
+
+main .stit {
+	color:#808285;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing:-0.48px;
+	text-align: center;
+	font-size: 16px;
+}
+
+main article .spread_bar {
+	width: 40px;
+	height: 1px;
+	background-color: #030303;
+	margin: 20px auto 50px auto;
+	transition: width 1s;
+}
+
+main article:hover .spread_bar {
+	width: 120px;
+}
+
+
 /* 메인 배너 영역 */
-.main_benner .swiper-slide {
+.main_banner{
+	margin-bottom: 103px;
+}
+
+.main_banner .swiper-slide {
 	height: 600px;
 }
-.main_benner .swiper-wrapper .swiper-slide:nth-child(3n+1) {
-	background:url("../img/banner1.jpg"); no-repeat center center;
+
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n+1) {
+	background:url("../img/banner1.jpg") no-repeat center center;
 }
 
-.main_benner .swiper-wrapper .swiper-slide:nth-child(3n+2) {
-	background:url("../img/banner2.jpg"); no-repeat center center;
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n+2) {
+	background:url("../img/banner2.jpg") no-repeat center center;
 }
 
-.main_benner .swiper-wrapper .swiper-slide:nth-child(3n) {
-	background:url("../img/banner3.jpg"); no-repeat center center;
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n) {
+	background:url("../img/banner3.jpg") no-repeat center center;
+}
+
+.main_banner .swiper-pagination-bullet {
+	display:inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #ffffff;
+	cursor:pointer;
+	border-radius:50%;
+	opacity:0.9;
+	box-shadow: 0px 2px 4px #212121;
+}
+
+.main_banner .swiper-pagination-bullet-active {
+	width: 50px;
+	border-radius: 6px;
+}
+
+.main_banner .navi {
+	position: absolute;
+	font-size: 30px;
+	top: calc(600px / 2 - 15px);
+	z-index: 10;
+	cursor: pointer;
+}
+
+.main_banner .navi.prev {
+	left: 10px;
+}
+
+.main_banner .navi.next {
+	right: 10px;
+}
+
+/** Welcome to Cozyshop */
+.main_sbanner {
+	margin-bottom: 103px;
+}
+
+.main_sbanner .tit {
+	color: #313131;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 38px;
+}
+
+.main_sbanner .tit > span {
+	font-weight: 700;
+}
+
+.main_sbanner .banner_grp .banner {
+	float: left;
+	width: calc(100% / 3 - 10px);
+	margin-left: 15px;
+}
+
+.main_sbanner .banner_grp .banner:first-child {
+	margin-left: 0;
+}
+
+
+.main_sbanner .banner_grp:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.main_sbanner .text1 {
+	color: #313131;
+	font-size: 18px;
+	letter-spacing: -1.08px;
+	text-align: center;
+	margin-top:15px;
+}
+
+.main_sbanner .text2 {
+	font-weight: 300;
+	color: #313131;
+	font-size: 14px;
+	letter-spacing: -0.84px;
+	text-align: center;
+}
+
+.main_sbanner .banner img {
+	display: block;
+	width: 100%;
+}
+
+
+/* 상품 진열 영역 */
+.goods_list {
+	margin-bottom: 103px;
+}
+
+.goods_list .goods .image {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.goods_list .goods .goods_nm {
+	color: #111111;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	padding: 5px 0 10px;
+	overflow: hidden;
+	word-break: break-all;
+	line-height: 20px;
+	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 10px;
+}
+
+.goods_list .goods .short_desc {
+	color: #777777;
+	font-size: 13px;
+	letter-spacing: -0.5px;
+	word-break: break-all;
+	margin-bottom: 8px;
+}
+
+.goods_list .goods .consumer {
+	color: #acacac;
+	font-size: 14px;
+	letter-spacing: -1.5px;
+	font-family: Verdana;
+	padding-right: 15px;
+}
+
+.goods_list .goods .price {
+	font-size: 18px;
+	letter-spacing: -0.8px;
+	font-weight: 600;
+	font-family: Verdana;
+}
+
+.goods_list ul .goods {
+	float: left;
+	width: calc(100% / 4 - 30px);
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.goods_list ul:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.goods_list ul .goods:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+/** 상품 소개 배너 */
+.main_intro_banner {
+	background:url("../img/intro_banner.jpg") no-repeat right center;
+	margin-bottom:103px;
+}
+
+.main_intro_banner .box {
+	float: left;
+	height: 450px;
+}
+
+.main_intro_banner .goods_desc {
+	width: 500px;
+	background-color: #ffffff;
+}
+
+.main_intro_banner .banner {
+	width: calc(100% - 500px);
+}
+
+.main_intro_banner > .inner:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.main_intro_banner .text1 {
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: -1.44px;
+	margin-top: 15px;
+}
+
+.main_intro_banner .text2 {
+	margin: 45px 0 50px;
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: -0.36px;
+}
+
+.main_intro_banner .view_more {
+	width: 100px;
+	height: 37px;
+	display: block;
+	border: 1px solid #333333;
+	color: #333333;
+	font-size: 14px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.main_intro_banner .view_more:hover {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+/** TV & MOVIE */
+.tv_movie .swiper-container {
+	height: 525px;
+}
+
+.tv_movie .swiper-slide {
+	width: 380px !important;
+	height: 525px;
+	overflow: hidden;
+}
+
+.tv_movie .swiper-slide img {
+	width: 100%;
+	display: block;
+}
+
+.tv_movie .navi {
+	position: absolute;
+	font-size: 31px;
+	top: 247px;
+	z-index: 10;
+	color: #d5d5d5;
+	cursor: pointer;	
+}
+
+.tv_movie .navi.prev {
+	left: calc(50% - 600px);
+}
+
+.tv_movie .navi.next {
+	right: calc(50% - 600px);
+}
+
+
+/** footer 영역 */
+footer{
+	margin-top: 103px;
+	background-color:#f9fafa;
+	min-height: 300px;
+}
+
+footer .customer_service_info {
+	background-color:#ffffff;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 20px 0;
+}
+
+footer .customer_service_info > .info {
+	display: table;
+}
+
+footer .customer_service_info .box {
+	display: table-cell;
+}
+
+footer .customer_service_info .box1{
+	width:195px;
+}
+
+footer .customer_service_info .box4{
+	width:250px;
+}
+
+footer .customer_service_info .text1{
+	font-size: 16px;
+	font-weight:bold;
+	font-family: Verdana;
+	letter-spacing: -2px;
+}
+
+footer .customer_service_info .text2 {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Verdana;
+	letter-spacing: -3px;
+}
+
+footer .customer_service_info .box4 .text2 {
+	font-size: 25px;
+}
+
+footer .customer_service_info .btn {
+	display: block;
+	width: 89px;
+	height: 19px;
+	text-align: center;
+	border: 1px solid #58595b;
+	color: #58595b;
+	font-size: 12px;
+	letter-spacing: -1px;
+	line-height: 17px;
+}
+
+footer .customer_service_info .btn:hover {
+	background-color: #58585b;
+	color: #ffffff;
+}
+
+footer .customer_service_info .box3 .btn:first-child {
+	margin-bottom: 3px;
 }
