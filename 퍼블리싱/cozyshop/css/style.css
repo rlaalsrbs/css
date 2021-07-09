@@ -496,6 +496,7 @@ footer .customer_service_info {
 
 footer .customer_service_info > .info {
 	display: table;
+	vertical-align: middle;
 }
 
 footer .customer_service_info .box {
@@ -525,7 +526,7 @@ footer .customer_service_info .text2 {
 }
 
 footer .customer_service_info .box4 .text2 {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 footer .customer_service_info .btn {
@@ -547,4 +548,170 @@ footer .customer_service_info .btn:hover {
 
 footer .customer_service_info .box3 .btn:first-child {
 	margin-bottom: 3px;
+}
+
+footer .customer_service_info .text3 {
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+
+footer .customer_service_info .text4 {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -1px;
+}
+
+footer .customer_service_info .text5 {
+	letter-spacing: -1px;
+}
+
+footer .customer_service_info .box4 {
+	padding-left: 0 10px 0 25px;
+}
+
+/** 하단 사이트 안내 & 공지사항 */
+footer .site_guide {
+	padding: 20px 0 17px;
+}
+
+footer .site_guide .site_map {
+	float:left;
+	width: calc(100% - 339px);
+}
+
+footer .site_guide .notice_box {
+	float: right;
+	width: 330px;
+	border: 1px solid #ced0d1;
+	background-color: #ffffff;
+	padding: 15px;
+}
+
+footer .site_guide:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+footer .notice_box .post_tit {
+	text-align: right;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 0 6px 5px 0;
+	border-bottom: 1px dashed #c4c4c4;
+	margin-bottom: 20px;
+	letter-spacing: -1px;
+	position: relative;
+}
+
+footer .notice_box .more {
+	position: absolute;
+	left: 6px;
+	top:0;
+	font-size: 11px;
+	font-weight: normal;
+	display: block;
+	width: 46px;
+	height: 20px;
+	border: 1px solid #58595b;
+	color:#0c0c0c;
+	text-align: center;
+	line-height: 18px;	
+}
+
+footer .notice_box .more:hover {
+	border-color: #0c0c0c;
+	background-color: #0c0c0c;
+	color: #ffffff;
+}
+
+footer .notice_box ul a {
+	display: block;
+	color: #8e9499;
+	font-size: 12px;
+	text-indent: 10px;
+	line-height: 1.8;
+	white-space:nowrap;
+	width: 298px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+footer .notice_box ul a:hover {
+	text-decoration: underline;
+}
+
+/** 하단 사이트 맵 */
+.site_guide .site_map {
+	margin-left:9px;
+}
+
+.site_guide .site_map .box{
+	float: left;
+	width: calc((100% - 380px) / 3);
+}
+
+.site_guide .site_map .box4 {
+	width: 330px;
+}
+
+.site_guide .site_map:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.site_guide .site_map .tit{
+	font-size: 13px;
+	font-weight: bold;
+	color: #404040;
+	margin-bottom: 23px;
+}
+
+.site_guide .site_map ul a {
+	font-size: 12px;
+	color: #969696;
+}
+
+.site_guide .site_map dl {
+	margin:0;
+	margin-bottom: 5px;
+	padding:0;
+	display:table;
+}
+
+.site_guide .site_map dt,
+.site_guide .site_map dd {
+	display: table-cell;
+	font-size: 12px;
+	color: #333333;
+}
+
+/** 하단 회사 정보 */
+footer .company_info {
+	border-top: 1px solid #d1d3d4;
+	padding: 22px 9px;
+	font-size: 12px;
+	color: #969696;
+	line-height: 1.8;
+}
+
+footer .company_info strong,
+footer .company_info .copyright {
+	color: #969696;
+}
+
+footer .company_info .copyright {
+	text-align: right;
+}
+
+/** 카카오 상담하기 버튼 */
+footer .kakao_btn {
+	width: 60px;
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	z-index: 5;
+	cursor: pointer;
 }
