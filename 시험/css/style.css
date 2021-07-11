@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+/* 공통 */
+* { 
+	box-sizing: border-box;
+	color: #000000;
+	font-family: 'Oswald', sans-serif;
+}
+
+html {
+	font-size: 13px; /* 1rem - 13px */
+}
+
+body { 
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0; 
+	margin: 0;
+}
+
+.layout_width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* 사이트 상단 메뉴 */
+.site_top { 
+	height: 30px;
+	background-color: #000000;
+	text-align: right;
+}
+
+.site_top a {
+	font-size: 18px; 
+	letter-spacing: -0.24px;
+	color: #ffffff;
+	padding: 0 10px 0 11px;
+	line-height: 30px;
+	position: relative;
+	display: inline-block;
+}
+
+.site_top a:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 9px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 11px;
+	left: 0;
+}
+
+.site_top .first:before {
+	display: none;
+}
+
+/* 사이트 로고, 검색, 아이콘 메뉴 */
+.logo_search .box {
+	width: calc(100% / 3);
+	float: left;
+}
+
+.logo_search .inner:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.logo_search .logo {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.logo_search .logo img {
+	height: 100px;
+}
+
+.logo_search .icon_menu img { 
+	vertical-align: top;
+	height : 30px;
+}
+
+
+.logo_search .icon_menu {
+	padding: 26px 0;
+	padding-top: 45px;
+}
+
+.logo_search .search {
+	padding-top: 45px;
+}
+
+.logo_search .search input[type='image'] {
+	height: 25px;
+	vertical-align: middle;
+}
+
+.logo_search .search .form_wrap {
+	float: right;
+}
+
+/* 메인 메뉴 영역 */
+
+nav ul li { 
+	float: left;
+	width: calc((100% - 50px) / 5);
+	text-align: center;
+}
+
+nav li i { 
+	font-size: 1.8rem;
+	vertical-align: middle;
+	position: relative;
+	top: 12px;
+	cursor: pointer;
+}
+
+nav li a {
+	display: block;
+	height: 45px;
+	font-size: 18px;
+	letter-spacing: -0.32px;
+	line-height: 48px;
+}
+
+nav li.more_menu {
+	width: 50px;
+	text-align: center;
+}
+
+/* 메인 배너 */
+
+.main_banner {
+	margin-bottom: 103px;
+}
+
+.main_banner .banner img {
+	vertical-align: top;
+}
+
+.main_banner .banner a:nth-child(1) img {
+	height : 380px;
+	position: relative;
+	top: 3px;
+}
+
+.main_banner .banner a:nth-child(2) img {
+	height : 380px;
+	position: relative;
+	top: 3px;
+}
+
+.main_banner .banner {
+	padding: 26px 0;
+	padding-left :15px;
+}
+
+/* 음식 진열 영역 */
+
+.food_list {
+	margin-bottom: 103px;
+	padding-left :55px;
+}
+
+.food_list .food .image {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.food_list .food .food_nm {
+	color: #111111;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	padding: 5px 0 10px;
+	overflow: hidden;
+	word-break: break-all;
+	line-height: 20px;
+	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 10px;
+}
+
+.food_list .food .food_info {
+	color: #777777;
+	font-size: 13px;
+	letter-spacing: -0.5px;
+	word-break: break-all;
+	margin-bottom: 8px;
+}
+
+.food_list ul .food {
+	float: left;
+	width: calc(100% / 4 - 30px);
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.food_list ul:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.food_list ul .food:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+/* footer 영역 */
+footer { 
+	margin-top: 100px;
+	background-color: #999999;
+	min-height: 100px;
+	padding : 50px 50px 50px 50px;
+	text-align: center;
+}
