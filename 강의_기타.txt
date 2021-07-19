@@ -1,0 +1,14 @@
+overflow (양 방향)
+	- hidden - 넘치는 영역을 감출 때 
+	- scroll - 스크롤바 생성
+	- auto - 자동으로 넘치면 스크롤바, 안넘치면 스크롤바 X
+	
+	overflow-x (좌우 방향)
+		- hidden 
+		- scroll 
+		- auto 
+		
+	overflow-y (상하 방향)
+	   - hidden
+	   - scroll
+	   - auto

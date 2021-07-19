@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			ul li:nth-child(1),
+			ul li:nth-child(2),
+			ul li:nth-child(3) {
+				color: red;
+			}
+			/**
+				2n  - n이 1부터 시작 
+						- 2, 4, 6, 8, 10 ...
+						
+				2n+1 - n이 0부터 시작 
+						- 1, 3, 5, 7, 9, ...
+			*/
+			ul li:nth-child(2n+1) {
+				border: 1px solid orange;
+			}
+			
+			
+			ul li:first-child {
+				background-color: blue;
+			}
+			
+			ul li:last-child {
+				background-color: green;
+			}
+			
+			ul li:first-of-type {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>메뉴1</li>
+			<li>메뉴2</li>
+			<li>메뉴3</li>
+			<li>메뉴4</li>
+			<li>메뉴5</li>
+			<li>메뉴6</li>
+			<li>메뉴7</li>
+			<li>메뉴8</li>
+			<li>메뉴9</li>
+			<li>메뉴10</li>
+		</ul>
+	</body>
+</html>

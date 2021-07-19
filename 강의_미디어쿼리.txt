@@ -1,0 +1,25 @@
+미디어쿼리 
+	- 장비 화면 사이즈에 따라서 적용되는 CSS를 구별 해주는 구간
+	
+@media all and (max-width: 구간px) {
+	// 구간에 따라서 적용될 CSS
+};
+
+
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+user-scalable=yes 
+		- 사용자가 화면 확대 축소를 할수 있는지 여부(yes - 가능, no - 불가
+initial-scale=1.0 
+		- 처음 로딩 사이즈(1 - 장비 사이즈 동일, 1 이상 - 확대, 1 미만 - 축소)
+maximum-scale=5.0 
+		- 사용자가 최대한 확대할 수 있는 사이즈 비율(1이상 - 확대 가능)
+		
+minimum-scale=0.5
+		- 사용자가 최대한 축소할 수 있는 사이즈 비율(1이하 - 축소 가능)
+
+width=device-width
+		- devide-width - 화면을 장비의 물리적 너비가 width
+		- 없다면 해상도 기준
+
+반응형 웹

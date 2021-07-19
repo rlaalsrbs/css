@@ -1,223 +1,246 @@
-스타일 속성
+스타일 속성 
 
-선택자 { 
-    background-color:red; width: 100%
-	color: blue;
+선택자 {
+	background-color : red; width: 100%;
+	color: blue; 
 }
 
-속성명:속성값;
+속성명 : 속성값;
 
 1. 글꼴 속성
-font-size - 글자의 사이즈
-              고정 사이즈
-			 - px (고정 화소 기준 사이즈)
-			 - pt (고정)
-			 
-			 상대 사이즈
-			 - em -부모 기준 요소의 사이즈를 기준의 사이즈
-			          부모 13px, 자식 1em -> 자식 13px
-					                        1.2em -> 15.6px
-			 - rem - 최상의 태그 기준 사이즈
-			        html 13px
-					1rem -> 13px
-					1.2rem -> 15.6px
-					
+font-size  - 글자의 사이즈
+			   고정 사이즈
+              - px (고정 화소 기준 사이즈)
+			  - pt (고정 사이즈)
+			  
+			  상대 사이즈
+			  - em - 부모 기준 요소를 기준 사이즈
+			           부모 13px, 
+					   자식 1em  -> 13px 
+					          1.2em -> 15.6px  
+			  - rem - 최상의 태그 기준 사이즈
+			          html 13px 
+					  1rem -> 13px
+					  1.2rem -> 15.6px
+
 color - 글자 색
-          1) 색상명 (red, orange, pink .....)
-          2) RGB(0~255, 0~255, 0~255)
-              rgb(255, 0, 0) - red
-              rgb(0, 255, 0) - green
-
-              255 * 255 * 255
-          3)hex 코드(16진수)
-            rgb 숫자 -> 16진수로 변경
-            rgb(255, 0, 0)
-                 ff   00 00			
-				 
-		   #ff0000
-		
-text-align - 텍스트 정렬
-               left - 왼쪽(기본값으로 가지는 태그가 많다)
-			   right - 오른쪽 정렬
-			   center - 중앙 정렬
-			   justify - 양쪽 정렬(자간 맞춤)
-
-line-height - 행간 (기본 값 1.2)
+		  1) 색상명 (red, orange, pink .....)
+		  2) RGB(0~255, 0~255, 0~255)
+		      rgb(255, 0, 0) - red
+			  rgb(0, 255, 0) - green
+			  
+			  255 * 255 * 255 
+		   3) hex 코드(16진수) 
+		      rgb 숫자 -> 16진수로 변경 
+			  rgb(255,  0,  0) 
+			       ff     00   00
+				   
+			 #ff0000
+			 
+text-align  - 텍스트 정렬
+				left - 왼쪽(기본값으로 가지는 태그가 많다)
+				right - 오른쪽 정렬
+				center - 중앙 정렬
+				justify - 양쪽 정렬(자간 맞춤)
+				
+line-height - 행간 (기본 값 1.2)		
 letter-spacing - 글자 자간 (글자 사이사이)
 word-spacing - 단어별 자간
 
 font-weight - 글자의 두께
-                 - 문자 (normal - 기본값, bold - 두껍게)
-				 - 숫자 (100~900) - 지원되는 폰트에 따라 다르다
-				 
-				 
-font-family - 글꼴
-                 font-family: 기본 글꼴, 대체 글꼴1, 대체 글꼴2;
-				                 기본 글꼴이 없는 경우 차례대로 대체 글꼴이 적용
-								 
+                - 문자 (normal - 기본값, bold - 두껍게) 
+				- 숫자 (100~900) - 지원되는 폰트에 따라 다르다
+
+
+font-family - 글꼴 
+				font-family: 기본 글꼴, 대체 글꼴1, 대체 글꼴2;
+								기본 글꼴이 없는 경우 차례대로 대체 글꼴이 적용
+								
 				시스템 폰트
 				
 				웹폰트(시스템에 없는 폰트)
 				
 				<link> 스타일 css 추가 방식
 				@import css 추가
-
-
+				
 2. 공간
-    display- 공간 속성을 변경
-              block - 공간
-			          - 너비, 높이
-					  - 상하좌우 여백(내부, 외부)
-					  - padding(내부 여백)
-					  - margin(외부 여백)
-					  
-              inline - 글의 속성
-                      - 너비, 높이 X
-                      - 모든 방향(상하좌우) 내부 여백 가능(padding)
-					  - 좌우 외부 여백가능(margin)
-			 
-			 inline-block
-			          - inline과 block을 절충
-					    - 줄 개행 X
-						- 너비, 높이 O, 모든 방향 외부 여백
+	display -  공간 속성을 변경
+				block - 공간
+						- 너비, 높이 
+                        - 상하좌우 여백(내부, 외부)						
+						- padding(내부 여백)
+						- margin(외부 여백)
 						
-			none - 감춤 처리
-			
-			표와 같이 만들어주는 속성 값;
-			table - 테이블 행
-			    table-cell - 테이블 열
+				inline - 글의 속성 
+				         - 너비, 높이 X 
+						 - 모든 방향(상하좌우) 내부 여백 가능(padding)
+						 - 좌우 외부 여백가능(margin)
+				
+				inline-block 
+						-  inline과 block을 절충
+						   - 줄 개행 X 
+						   - 너비, 높이 O, 모든 방향 외부 여백
+						   
+				none -  감춤 처리 
+				
+				표와 같이 만들어주는 속성 값;
+				table  - 테이블 행 
+					table-cell - 테이블 열
 				
 3. 레이아웃
-   box-sizing
-    1) 내용 영역 기준 
-	content-box
-	     내용 영역의 사이즈를 유지 하면서 확대
-		 총 사이즈 = 내용 영역 + 내부 여백 + 경계
-	  
-		
-	2) 경계 영역 기준
-	    border-box
-		경계를 기준으로 사이즈를 정하는 방식
-		경계 + 내부여백에 따라서 내용 영역의 사이즈가 변경이 된다.
-
-
-4. 여백
-    1) 내부 여백
-	    padding
-		        
-				padding: 10px; -> 상,우,아래,왼쪽(모든 방향) 10px
-				padding: 10px 20px;
-				                  -10px(상, 하)
-								  -20px(오른쪽, 왼쪽)
-				padding: 10px 20px 30px;
-				           -10px (위쪽)
-						   -20px (오른쪽, 왼쪽)
-						   -30px (아래쪽)
-				
-				padding: 10px 20px 30px 40px;
-				             -10px(위쪽)
-							 -20px(오른쪽)
-							 -30px(아래쪽)
-							 -40px(왼쪽)
-				
-	2) 외부 여백
-	    margin
-		   - padding과 적용 순서 동일
-		   
-		   -margin-top
-		   -margin-bottom
-
-5. 경계
-    border - 경계
-	
-	       border : 라인 굵기(px) 경계선 종류 색상;
-		   
-		    경계선 종류
-			       1) solid - 직선
-				   2) dotted - 점선
-				   3) dashed - ---------
-				   
-	border-radius
-	       -> 경계를 둥글게
-		   (px, %)
-		   -> 50% -> 원
-		   
-6. 포지션
-     -배치
-	 position
-	          - static - (기본값)
-			  
-			  상대 위치
-			  -relative
-			     - 기준(요소 자신)
-				 - 자기 자신이 위치한 위치 기준으로 상대적으로 이동
-			  
-			  -absolute
-			     -기준 - 상대위치 지정한 부모 또는 조상
-				         - 부모, 조상 중 누구라도 상대 위치 속성을 가진다면(relative, absolute, fixed)
-				 - 상대 속을 가지고 있는 부모가 없다면 전체 문서 기준(html)
-			  
-			  -fixed
-			        -기준 - 물리적으로 보이는 화면 기준으로 상대적으로 이동
-					
-	        상대위치는 상대적으로 이동하기 위한 것이므로
-			속성 존재
-			top -> 위 -> 아래
-			right -> 오른쪽 -> 왼쪽
-			bottom -> 아래 -> 위로
-			left -> 왼쪽 -> 오른쪽
-			z-index - 각 요소의 층위
-			            숫자가 클수록 앞쪽에 있고
-						숫자가 작아질수록 뒤쪽에 있다
-						예) z-index: 10, z-index: 9;
-						    10이 9보다는 앞에 있다
-							
-7. 배치
-float
-   left - 왼쪽 -> 오른쪽
-   right - 오른쪽 -> 왼쪽
-   
-   -float 속성이 없더라도 다음 요소에 영향을 미친다
-   -clear 속성을 반드시 적용해야 한다.
-   
-   clear
-       -공간 속성을 가진 요소에서 적용 가능
-	   - left
-	        float: left 속성 제거
+	box-sizing
+		1) 내용 영역 기준 
+			content-box(기본값)
+			내용 영역의 사이즈를 유지 하면서 확대
+			총 사이즈 = 내용 영역 + 내부 여백 + 경계
 			
-	   - right
-	        float: right 속성 제거
-	   
-	   - both
-	        float:left, float: right 모두 제거
+		2) 경계 영역 기준
+			border-box
+			경계를 기준으로 사이즈를 정하는 방식
+			경계 + 내부여백에 따라서 내용 영역의 사이즈가 변경이 된다.
+			
+	
+4. 여백
+	1) 내부 여백 
+		padding
+			- padding: 10px;  -> 상,오른쪽,아래,왼쪽(모든 방향) 10px
+			- padding: 10px 20px; 
+								- 10px (상, 하)
+								- 20px (오른쪽, 왼쪽)
+								
+			- padding: 10px 20px 30px; 
+							- 10px (위쪽)
+							- 20px (오른쪽, 왼쪽)
+							- 30px (아래쪽)
+							
+			- padding: 10px 20px 30px 40px;
+							- 10px(위쪽)
+							- 20px(오른쪽)
+							- 30px (아래쪽)
+							- 40px (왼쪽)
+			
+			- padding-top
+			- padding-bottom
+			- padding-left 
+			- padding-right
+	2) 외부 여백
+		margin
+		    - padding과 적용 순서 동일 
+				
+			- margin-top
+			- margin-bottom
+			- margin-left
+			- margin-right
+			
+5. 경계
+	border - 경계
+	       
+		   border : 라인 굵기(px) 경계선 종류 색상;
+			
+			경계선 종류
+					1) solid - 직선
+					2) dotted - 점선
+					3) dashed -  ---------
+					
+	border-radius
+			-> 경계를 둥글게
+			(px, %)
+			-> 50% -> 원
+			
+6. 포지션 
+	- 배치
+	position 
+			 - static - (기본값)
+			 
+			 상대 위치  
+			 - relative 
+				- 기준(요소 자신)
+				- 자기자신이 위치한 위치기준으로 상대적으로 이동
+				
+			 - absolute 
+			    - 기준 - 상대위치  부모 또는 조상
+				         - 부모, 조상 중 누구라도 상대 위치 속성을 가진 다면
+						 (relative, absolute, fixed)
+						 - 상대 속을 가지고 있는 부모가 없다면 
+						   전체 문서 기준(html)
+						 
+						 
+				- 기준 내에서 상대적으로 이동 		 
+						 
+			 - fixed
+				 - 기준 - 물리적으로 보이는 화면 기준으로 상대적으로 이동 
+				 
+			상대위치는 상대적으로 이동하기 위한 것이므로 하기 추가 속성 존재
+				top - 위-> 아래
+				right - 오른쪽 -> 왼쪽 
+				bottom - 아래 -> 위로
+				left - 왼쪽 -> 오른쪽
+				z-index - 각 요소의 층위 
+							숫자가 클수록 앞쪽에 있고 
+							숫자가 작아질 수록 뒤쪽에 있다
+							예) z-index: 10,  z-index: 9; 
+							     10이 9보다는 앞에 있다
+
+7. 배치
+float 
+	left - 왼쪽 -> 오른쪽 
+	right - 오른쪽 -> 왼쪽
+	
+	- float 속성이 없더라도 다음 요소에 영향을 미친다
+	- clear 속성을 반드시 적용해야 한다
+	
+	clear 
+		- 공간 속성을 가진 요소에서 적용 가능 
+		- left
+		    float: left 속성 제거 
+			
+		- right
+			float: right 속성 제거
+			
+		- both
+			float:left, float: right 모두 제거 
+	
+	가상 클래스 선택자 - after 
+	예시) 
+		.wrap:after {
+				clear: left;
+				content: '';
+				display: block;
+			}
 			
 	width - 너비
-	         - 
-			 
-
+			- calc() -> 계산
+			예) 
+				width: calc(100% - 200px);
+				width: calc(100% / 3);
+				연산 기호 앞 뒤로 반드시 띄어쓰기 
+				
 8. 그래픽
 background
-     - background-color - 배경색
-	                                -1) 색상명, 2)rgb, 3) hex 4)rgba
-									     a - 알파채널(투명도, 0~1)
-										   0에 가까울수록 투명, 1에 가까울수록 불투명
-										   
-	- background-image - 배경 이미지
-	           background-image:url("이미지 경로");
-			   
-	-background-repeat
-	             -no-repeat -> 반복 없이 1번만 출력
-				 - repeat-x -> 왼쪽에서 오른쪽으로 반복 출력
-				 - repeat-y -> 위에서 아래로 반복 출력
-				 
-				 
-	-background-position 
-           -배경 이미지의 위치
-		   background-position: 좌우(left right center) 상중하(top bottom center)
-		   
-		   
-		   
- 
-    -단축
-	background:색상 이미지 반복 위치;
-	            (색상, 이미지는 둘다 나와도 되고, 둘중에 하나만 있어도 된다.)
+	- background-color - 배경색
+									 - 1) 색상명, 2) rgb,  3) hex 
+									 - 4) rgba 
+									        a - 알파채널(투명도, 0 ~ 1)
+											   0에 가까울 수록 투명, 1에 가까울 수록 불투명
+	
+	- background-image - 배경 이미지 
+				background-image:url("이미지 경로");
+				
+	- background-repeat
+			- no-repeat -> 반복 없이 1번만 출력 
+			- repeat-x -> 왼쪽에서 오른쪽으로 반복 출력 
+			- repeat-y -> 위에서 아래로 반복 출력
+			
+	- background-position 
+			- 배경 이미지의 위치
+			background-position: 좌중우(left|right|center) 상중하(top|bottom|center)
+			
+			수치 입력시 
+			background-position: 100px                              100px;
+			                            좌에서 우로 100px 이동       위에서 아래로 100px
+										
+			
+			
+	- 단축
+	background: 색상 이미지 반복 위치;
+				(색상, 이미지는 둘다 나와도 되고, 둘중에 하나만 있어도 된다)

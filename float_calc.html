@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
+	<head>
+		<meta charset='utf-8'>
 		<style>
-		.box1 {
-		float: left;
-		background-color: red;
-		width: calc(100% - 200px);
+		.box1 { 
+			float: left;
+			background-color: red;
+			width: calc(100% - 200px);
 		}
 		
-		.box2 { 
-		float: right;
-		background-color: blue;
-		width: 200px;
+		.box2 {
+			float: right;
+			background-color: blue;
+			width: 200px;
 		}
-		.wrap:after{
-		clear:both;
-		content: '';
-		display: block;
+		.wrap:after {
+			clear: both;
+			content: '';
+			display: block;
 		}
 		
-		.cell{
-		float: left;
-		box-sizing: border-box;
-		border: 1px solid red;
-		height: 150px;
-		width: calc(100% / 3);
+		
+		.cell {
+			float: left;
+			box-sizing: border-box;
+			border: 1px solid red;
+			height: 150px;
+			width: calc(100% / 3);
 		}
 		
 		.wrap2:after {
-		clear:left;
-		content: '';
-		display: block;
-		
+			clear: left;
+			content: '';
+			display: block;
 		}
 		</style>
 	</head>
 	<body>
-	     <div class='wrap'>
-		    <div class='box box1'>
-			    왼쪽
+		<div class='wrap'>
+			<div class='box box1'>
+				왼쪽
 			</div>
 			<div class='box box2'>
-			    오른쪽
-				</div>
-		 </div>	
-		 
-		 
-		 <div class='wrap2'>
-		    <div class='cell'>1</div>
+				오른쪽
+			</div>
+		</div>
+		
+		<div class='wrap2'>
+			<div class='cell'>1</div>
 			<div class='cell'>2</div>
 			<div class='cell'>3</div>
-			</div>
+		</div>	
 	</body>
 </html>

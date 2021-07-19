@@ -1,0 +1,159 @@
+text-decoration 
+		- none - 기본값
+		- underline - 밑줄
+		- italic - 이탤릭체(기울임체)
+		
+
+list-style 
+	ul태그 li의 스타일
+		dist, circle, square
+		
+		none -> 스타일 없음
+		
+cursor 
+	- 마우스를 올렸을때 화살표 모양
+	pointer -> 손가락 모양
+	hand ...
+	
+border: 1px solid red; // 모든 방향
+	- border-top  - 상단 경계선
+	- border-bottom  - 하단 곙계선
+	- border-left - 왼쪽 경계선
+	- border-right  - 오른쪽 경계선
+
+
+
+height - 높이 
+	min-height - 최소 높이 
+	max-height - 최대 높이 
+
+width - 너비
+	min-width - 최소 너비
+	max-width - 최대 너비
+	
+	
+<aside class='on' id='menu'></aside>
+aside.on {
+	
+}
+
+aside#menu {
+	
+}
+
+
+margin 
+	- auto (양 방향 균등 여백)
+	- margin: 0 auto; 
+		(좌우로 균등 여백 - 가운데 정렬)
+		
+text-transform 
+		- uppercase (소문자 -> 대문자로)
+		- lowercase (대문자 -> 소문자로)
+		
+vertical-align 
+	   - 수직 정렬 
+	   - top 
+	   - middle 
+	   - bottom 
+	   
+background: 색상 이미지 반복 위치
+		
+		반복 
+			no-repeat - 반복 없음
+			repeat-x - 좌->우로 반복
+			repeat-y -> 상 ->하로 반복
+			
+		위치
+			left|center|right   top|center|bottom
+			
+			100px                        100px
+			(좌에서 우로 100px)       (위에서 아래로 100px)
+			
+nth-child(수식)
+3n+1 
+		-> 1, 4, 7, 10
+		
+3n+2 
+		-> 2, 5, 8, 11
+
+3n 
+	-> 3, 6, 9, 12 ...
+	
+opacity 
+	 - 투명도(0~1)
+		0에 가까울 수 록 투명,
+		1에 가가울 수록 불투명
+		
+box-shadow
+		- 요소에 그림자 효과
+		좌에서 우     위에서 아래     번짐 정도(blur)  그림자색상
+		
+	   box-shadow: 0px 2px 4px #000000;
+	   
+	   
+:first-child 
+	- 자식 중에서 첫번째
+	
+:last-child 
+	- 자식 중에서 마지막 번째
+	
+	
+word-break :
+		- break-all
+			텍스트 자동 줄 개행
+			
+			
+padding : 상단  좌우 하단
+	padding: 5px 0 10px;
+	
+
+
+nth-child(4n+1)
+
+
+4n+1
+	1, 5, 9 .... 
+	
+background-size 
+				- cover : 배경 이미지 영역 자동 맞춤
+					
+
+margin: 45px 0 50px;
+
+text-decoration: 
+		- none  - 효과 없음
+		- underline - 밑줄
+		- italic 
+		
+text-indent 
+	- 들여쓰기 
+	
+	예) text-indent: 10px; 
+	-> 좌에서 우로 10px 만큼 들여쓰기
+	
+text-overflow: 
+	- ellipsis   (생략 표시 ... 을 추가)
+	
++ 생략되는 글 요소가 너비를 가져야 하고
++ 글 개행 속성 X 
+white-space  
+		- nowrap  -> 줄 개행 X
+		- wrap  -> 줄 개행
++ overflow: hidden -> 넘치는 부분 가리기 
+	
+	
+:first-of-type 
+:last-of-type
+:nth-of-type
+
+
+ul {
+	list-style: dist, circle, square, none 
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

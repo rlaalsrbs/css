@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	     <meta charset='utf-8'>
-		 <meta name="viewport" content="user-scalable=yes, intial-scale=1.0 minimum-scale=0.5, maximum-scale=2.0,width=device-width">
-		 <title>미디어 쿼리</title>
-		 <style>
-		 .box{
-		 border: 1px solid red;
-		 box-sizing: border-box;
-		 height: 200px;
-		 width: calc(100% / 3);
-		 float: left;
-		 }
-		 
-		 body:after{
-		 clear:left;
-		 content: '';
-		 display: block;
-		 }
-		 
-		 @media all and (max-width: 700px) {
-		 .box{
-		 width: calc(100%/2);
-		 border-color: blue;
-		 }
-		 
-		 @media all and (max-width: 500px) {
-		 .box{
-		 width:100%;
-		 border-color: orange;
-		 }
-		 }
-		 
-		 }
-		 </style>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,minium-scale=0.5,maxium-scale=2.0,width=device-width">
+		<title>미디어 쿼리</title>
+		<style>
+			.box { 
+				border: 1px solid red;
+				box-sizing: border-box;
+				height: 200px;
+				width: calc(100% / 3);
+				float: left;
+			}
+			
+			body:after {
+				clear: left;
+				content: '';
+				display: block;
+			}
+			
+			@media all and (max-width: 700px) {
+				.box {
+					width: calc(100% / 2);
+					border-color: blue;
+				}
+			}
+			
+			@media all and (max-width: 500px) {
+				.box {
+					width: 100%;
+					border-color: orange;
+				}
+			}
+		</style>
 	</head>
 	<body>
-        <div class="box">BOX1</div>
-		<div class="box">BOX2</div>
-		<div class="box">BOX3</div>
-		<div class="box">BOX4</div>
-		<div class="box">BOX5</div>
-		<div class="box">BOX6</div>
-		<div class="box">BOX7</div>
-		<div class="box">BOX8</div>
-		
+		<div class='box'>BOX1</div>
+		<div class='box'>BOX2</div>
+		<div class='box'>BOX3</div>
+		<div class='box'>BOX4</div>
+		<div class='box'>BOX5</div>
+		<div class='box'>BOX6</div>
+		<div class='box'>BOX7</div>
+		<div class='box'>BOX8</div>
+		<div class='box'>BOX9</div>
+		<div class='box'>BOX10</div>
 	</body>
-	
+</html>

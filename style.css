@@ -1,24 +1,24 @@
 /* 어떤 스타일 내용에 대한 설명 */
 /*
-html{
-	background-color:blue;
+html {
+	background-color: blue; 
 }
 */
-div{
-	width:200px;
-	height:200px;
+div {
+	width: 200px;
+	height: 200px; 
 	background: orange;
-	border:3px solid blue;
+	border: 3px solid blue;
 }
 
-.div1{
-	width:200px;
-	height:200px;
-	background:pink;
+.div1 { 
+	width: 200px;
+	height: 200px;
+	background: pink;
 }
 
-#div2{
-	width:200px;
-	height:200px;
-	background:red;
+#div2 {
+	width: 200px;
+	height: 200px;
+	background: red;
 }
